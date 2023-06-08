@@ -1,0 +1,29 @@
+
+<div class="row center">
+    <div class="col-md-8 col-sm-8 col-lg-8">
+        <div class="table-responsive card">
+            <h3 class="card-header">Entidades registadas</h3>
+            <table class="table">
+                <thead>
+                    <th class="text-center"> Entidade</th>
+                    <th class="text-center"> Nif</th>
+                    <th class="text-center"> Email</th>
+                    <th class="text-center"> Contacto</th>
+                    <th class="text-center">Ações</th>
+                </thead>
+                <tbody *ngFor="let data of dados">
+                   <tr>
+                    <td class="text-center">{{data.name}}</td>
+                    <td class="text-center">{{data.nif}}</td>
+                    <td class="text-center">{{data.email}}</td>
+                    <td class="text-center">{{data.contact}}</td>
+                    <td class="text-center">
+                        <button class="btn btn-danger"><i class="fa fa-trash" ></i></button>
+                        <button class="btn btn-success"><i class="fa fa-edit" ></i></button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
